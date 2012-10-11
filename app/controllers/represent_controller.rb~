@@ -1,10 +1,10 @@
-class RenderController< ApplicationController
+class RepresentController< ApplicationController
   
   
   
   def display
     
-     @sections = Section.all
+     @sections = Section.order("relevance")
     
     if params[:name].nil?
       @current_section=Section.first

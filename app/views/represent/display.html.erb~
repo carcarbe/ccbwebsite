@@ -1,3 +1,4 @@
+<div id="wrapper">
 <div id="banner">
 
 	<span id="Date"><%= DateTime.now.strftime('%A %d %B %Y') %></span>
@@ -6,7 +7,7 @@
 	<div id="mainNav">
 	 	
 	 <ul>
-	<% @sections.reverse.each do |section| %>
+	<% @sections.each do |section| %>
 	 
 	   <li> <%= link_to section.name, represent_path(section.name)%></li>
 		     
@@ -22,7 +23,7 @@
 	
 	<h2><%= project.name%></h2>
 		
-	<% current_contents=Content.find_all_by_project_id(project.id) 
+	<% current_contents=Content.find_all_by_project_id(project.id).sort_by("relevance") 
 	 unless current_contents.nil? 
 	 current_contents.each do |content|
 	 %>
@@ -46,3 +47,4 @@
 <% end%>
 </div>
 
+</div>

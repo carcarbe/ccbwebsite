@@ -7,7 +7,7 @@
 	<div id="mainNav">
 	 	
 	 <ul>
-	<% @sections.reverse.each do |section| %>
+	<% @sections.each do |section| %>
 	 
 	   <li> <%= link_to section.name, represent_path(section.name)%></li>
 		     
@@ -23,7 +23,7 @@
 	
 	<h2><%= project.name%></h2>
 		
-	<% current_contents=Content.find_all_by_project_id(project.id) 
+	<% current_contents=Content.find_all_by_project_id(project.id).sort{|c1,c2| c1.relevance<=>c2.relevance } 
 	 unless current_contents.nil? 
 	 current_contents.each do |content|
 	 %>

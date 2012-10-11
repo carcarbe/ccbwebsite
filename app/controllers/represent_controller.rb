@@ -4,7 +4,7 @@ class RepresentController< ApplicationController
   
   def display
     
-     @sections = Section.all
+     @sections = Section.order("relevance desc")
     
     if params[:name].nil?
       @current_section=Section.first
