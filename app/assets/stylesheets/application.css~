@@ -110,12 +110,12 @@ width: 560px;
 
 }
 
-#tableSkills th{
+.tableSkills th{
    text-align: left;
    
 }
 
-#tableSkills td {
+.tableSkills td {
 
 padding-bottom: 23px;
 
