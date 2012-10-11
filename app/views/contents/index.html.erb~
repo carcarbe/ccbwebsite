@@ -16,7 +16,7 @@
 <% @contents.each do |content| %>
   <tr>
     <td><%= content.name %></td>
-    <td><%= content.order %></td>
+    <td><%= content.relevance %></td>
     <td><%= content.section_id %></td>
     <td><%= content.project_id %></td>
     <td><%= content.info %></td>
