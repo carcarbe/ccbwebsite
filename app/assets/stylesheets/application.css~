@@ -15,7 +15,7 @@
 width: 900px;
 margin-right: 50px;
 margin-left:  50px;
-margin-top: 10px;
+margin-top:   10px;
 
 }
 
@@ -149,7 +149,7 @@ padding-bottom: 23px;
 vertical-align:text-top;
 }
 
-#email a{
+.mail a{
 	color: #6378df
 }
 
@@ -175,7 +175,7 @@ position: relative;
 	letter-spacing: -1px;
 	font-weight: bold;
 position: relative;
-left: 325px;
+left: 328px;
 top: 330px;
 	
 }
