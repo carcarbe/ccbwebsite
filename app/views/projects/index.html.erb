@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Relevance</th>
+    <th>Order</th>
     <th>Section</th>
     <th></th>
     <th></th>
@@ -13,11 +13,11 @@
 <% @projects.each do |project| %>
   <tr>
     <td><%= project.name %></td>
-    <td><%= project.relevance %></td>
+    <td><%= project.order %></td>
     <td><%= project.section_id %></td>
     <td><%= link_to 'Show', project %></td>
     <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

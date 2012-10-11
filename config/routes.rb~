@@ -1,6 +1,12 @@
 Ccbwebsite::Application.routes.draw do
-  resources :sections
-  root :to => 'section#index'
+   
+    resources :contents
+  
+    resources :projects
+  
+    resources :sections  
+  
+  match "/(:name)" =>"render#display" ,:as=>:render , :via=>:get
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

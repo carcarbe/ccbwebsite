@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Relevance</th>
+    <th>Order</th>
     <th>Section</th>
     <th>Project</th>
     <th>Info</th>
@@ -16,14 +16,14 @@
 <% @contents.each do |content| %>
   <tr>
     <td><%= content.name %></td>
-    <td><%= content.relevance %></td>
+    <td><%= content.order %></td>
     <td><%= content.section_id %></td>
     <td><%= content.project_id %></td>
     <td><%= content.info %></td>
     <td><%= content.kind %></td>
     <td><%= link_to 'Show', content %></td>
     <td><%= link_to 'Edit', edit_content_path(content) %></td>
-    <td><%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', content, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

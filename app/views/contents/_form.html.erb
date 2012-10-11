@@ -1,4 +1,4 @@
-<%= form_for(@content) do |f| %>
+<%= form_for(@content, :html => { :multipart => true }) do |f| %>
   <% if @content.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@content.errors.count, "error") %> prohibited this content from being saved:</h2>
@@ -16,25 +16,31 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :relevance %><br />
-    <%= f.number_field :relevance %>
+    <%= f.label :order %><br />
+    <%= f.number_field :order %>
   </div>
   <div class="field">
     <%= f.label :section_id %><br />
-    <%= f.number_field :section_id %>
+    <%= f.select :section_id, Section.find(:all).collect { |s|[s.name,s.id]}%>
   </div>
   <div class="field">
     <%= f.label :project_id %><br />
-    <%= f.number_field :project_id %>
+    <%= f.select :project_id, Project.find(:all).collect { |p|[p.name,p.id]}%>
   </div>
-  <div class="field">
+    <div class="field">
+    <%= f.label :kind %><br />
+    <%= f.select :kind, [['Text','text'],['Image','image' ]] %>
+  </div>
+  <div class="field" id="text_info">
     <%= f.label :info %><br />
     <%= f.text_area :info %>
   </div>
-  <div class="field">
-    <%= f.label :kind %><br />
-    <%= f.text_field :kind %>
+  <div class="field" id="image_info">
+  	<%= f.label :photo,'Imagen' %><br />
+	<%= f.file_field :photo%>
+
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
