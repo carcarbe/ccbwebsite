@@ -7,7 +7,7 @@
 
 <p>
   <b>Order:</b>
-  <%= @project.relevance %>
+  <%= @project.order %>
 </p>
 
 <p>

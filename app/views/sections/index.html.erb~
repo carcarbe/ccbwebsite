@@ -12,7 +12,7 @@
 <% @sections.each do |section| %>
   <tr>
     <td><%= section.name %></td>
-    <td><%= section.relevance %></td>
+    <td><%= section.order %></td>
     <td><%= link_to 'Show', section %></td>
     <td><%= link_to 'Edit', edit_section_path(section) %></td>
     <td><%= link_to 'Destroy', section, confirm: 'Are you sure?', method: :delete %></td>

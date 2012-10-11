@@ -7,7 +7,7 @@
 
 <p>
   <b>Order:</b>
-  <%= @section.relevance %>
+  <%= @section.order %>
 </p>
 
 

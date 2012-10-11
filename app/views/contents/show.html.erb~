@@ -7,7 +7,7 @@
 
 <p>
   <b>Order:</b>
-  <%= @content.relevance %>
+  <%= @content.order %>
 </p>
 
 <p>

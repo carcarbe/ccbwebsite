@@ -16,7 +16,7 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :relevance %><br />
+    <%= f.label :order %><br />
     <%= f.number_field :order %>
   </div>
   <div class="field">

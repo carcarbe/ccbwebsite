@@ -1,5 +1,5 @@
 class Content < ActiveRecord::Base
-  attr_accessible :name, :relevance, :info, :kind, :project_id, :section_id, :photo
+  attr_accessible :name, :order, :info, :kind, :project_id, :section_id, :photo
   validates_inclusion_of :kind, :in => [ 'text', 'image'],
   :message => "must be one of Text or Image."
  
