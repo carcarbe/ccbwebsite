@@ -1,6 +1,6 @@
 Ccbwebsite::Application.routes.draw do
   resources :sections
-  root :to => 'section#index'
+  root :to => 'sections#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
