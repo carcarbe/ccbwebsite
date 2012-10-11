@@ -1,16 +1,20 @@
+<div id="wrapper">
+<div id="banner">
+
+	<span id="Date"><%= DateTime.now.strftime('%A %d %B %Y') %></span>
 
 
-<div id="mainNav">
- <span id="Date"><%= DateTime.now.strftime('%A %d %B %Y') %></span>	
- <ul>
-<% @sections.reverse.each do |section| %>
- 
-   <li> <%= link_to section.name, represent_path(section.name)%></li>
-	     
-<% end %>
-</ul>
-</div>
-	
+	<div id="mainNav">
+	 	
+	 <ul>
+	<% @sections.reverse.each do |section| %>
+	 
+	   <li> <%= link_to section.name, represent_path(section.name)%></li>
+		     
+	<% end %>
+	</ul>
+	</div>
+</div>	
 <div id="webContent">
 	
 <h1 ><%= @current_section.name%> </h1>
@@ -41,6 +45,6 @@
 	<%end %>
  <%end %>
 <% end%>
-	</div>
-<div id="pruebaloca">
+</div>
+
 </div>

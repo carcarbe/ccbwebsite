@@ -11,15 +11,31 @@
  *= require_self
  *= require_tree .
 */
-#personalWebsite {
+#wrapper {
+width: 900px;
+margin-right: 50px;
+margin-left:  50px;
 
-	 
+}
+
+#banner  {
+
+background: url(../images/banner.jpg) ;
+border-radius: 20px;
+display: block;
+height: 404px;
+width: 800px;
+
+}
+#banner span {
+
+
 }
 
 #mainNav {
 	
 margin-top: -20;
-background-image: url(../images/polonez_car.png);
+
 overflow: hidden;
 
 }
@@ -37,13 +53,16 @@ overflow: hidden;
 #mainNav li {
 	display: inline;
 	float: right;
+	
+	margin-top: 328px;
 }
 
 #mainNav a {
- 
+ font-weight: bold;
 	display: block;
 	border: 1px solid #000;
-border-bottom: none;
+border-radius: 10px;
+
 padding: 5px 15px 5px 15px;
 margin-right: 5px;
 background-color: #EAEAEA;
@@ -52,10 +71,10 @@ color: #333;
 	}
 #mainNav a:link {  }
 #mainNav a:visited {  }
-#mainNav a:hover {  color:#FF0000; }
+#mainNav a:hover {  color:#FFFFFF; }
 #mainNav a:active { color:#333333;}
 
-#mainNav a:hover { background-color:#666666; }
+#mainNav a:hover { background-color:#0241a8; }
 
 #mainNav span {
 	font-family: verdana, arial, helvetica, sans-serif;
@@ -73,18 +92,21 @@ color: #333;
 }
 
 #webContent {
-margin-left: 100px;
-margin-right: 100px;
+width: 775px;
+
+background-color: #EAEAEA;
+margin-top: 20px;
 font-family: Comic Sans, Comic Sans MS, cursive;
 font-weight: 400;
-padding: 40px;
+padding: 20px;
 border : 1px solid #999999;
 border-radius: 15px;
+
 }
 
 #webContent h1 {
 
-	 
+	 color:#0241a8;
  
 	border-bottom: 2px solid #B2F511;
 	
@@ -101,6 +123,9 @@ border-radius: 15px;
 	word-spacing: 5px;
 	background: url(images/feature_bug.png) no-repeat top right;
 
+}
+#webContent h2{
+color:#0241a8;
 }
 
 #about_me_info {
@@ -138,14 +163,19 @@ position: relative;
 }
 
 #Date {
-	 font-family: times, Times New Roman, times-roman, georgia, serif;
-	color: #444;
-	margin: 0;
-	padding: 10px 10px 16px 10px;
-	font-size: 21px;
+
+	 
+	display: block;
+	  
+	color: #FFFFFF;
+	 
+	font-size: 15px;
 	line-height: 24px;
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 	font-weight: bold;
+position: relative;
+left: 325px;
+top: 330px;
 	
 }
 
