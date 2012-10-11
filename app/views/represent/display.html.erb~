@@ -5,7 +5,7 @@
  <ul>
 <% @sections.reverse.each do |section| %>
  
-   <li> <%= link_to section.name, represent_path(section.name)%></li>
+   <li> <%= link_to section.name, render_path(section.name)%></li>
 	     
 <% end %>
 </ul>
