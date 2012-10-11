@@ -29,6 +29,7 @@ group :production do
 end
 
 gem 'thin'
+gem 'therubyracer'
 
 gem 'jquery-rails'
 
