@@ -55,7 +55,7 @@ overflow: hidden;
 	display: inline;
 	float: right;
 	
-	margin-top: 328px;
+	margin-top: 325px;
 }
 
 #mainNav a {
@@ -150,7 +150,23 @@ vertical-align:text-top;
 }
 
 a.mail {
+margin-top: 10px;
 	color: #6378df
+
+}
+
+.mail{
+
+background: url(../images/mail.png) no-repeat ;
+padding-left: 55px;
+padding-top: 27px;
+}
+.telephone {
+ 
+margin-top: 20px;
+background: url(../images/telephone.png) no-repeat ;
+padding-left: 55px;
+padding-top: 25px;
 }
 
 .photo {
@@ -184,14 +200,25 @@ top: 330px;
 
 font-weight:bold;
 background: url(../images/blue_star.png) no-repeat ;
-padding-left: 38px;
+padding-left: 40px;
 padding-top: 15px;
 
  
 }
 
+.project_section {
+margin-bottom: 60px;
+
+}
+
 iframe {
 	 display: block;
+}
+
+#Photography {
+background: url(../images/Camera.png) no-repeat ;
+padding-left: 55px;
+padding-top: 15px;
 }
 
  

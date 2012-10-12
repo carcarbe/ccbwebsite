@@ -23,7 +23,7 @@
 	
 	<h2><%= project.name%></h2>
 		
-	<% current_contents=Content.find_all_by_project_id(project.id).sort_by("relevance") 
+	<% current_contents=Content.find_all_by_project_id(project.id).sort{|c1,c2| c1.relevance<=>c2.relevance } 
 	 unless current_contents.nil? 
 	 current_contents.each do |content|
 	 %>
