@@ -180,9 +180,13 @@ top: 330px;
 	
 }
 
-.project {
+.project_name {
 
 font-weight:bold;
+background: url(../images/blue_star.png) no-repeat ;
+padding-left: 38px;
+padding-top: 15px;
+
  
 }
 

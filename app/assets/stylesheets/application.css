@@ -183,6 +183,10 @@ top: 330px;
 .project_name {
 
 font-weight:bold;
+background: url(../images/blue_star.png) no-repeat ;
+padding-left: 40px;
+padding-top: 15px;
+
  
 }
 
