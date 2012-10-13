@@ -157,7 +157,7 @@ overflow: hidden;
 float: left;
 width: 300px;
 padding: 10px;
-margin-left: 70px;
+margin-left: 100px;
 }
 
 #tableSkills th{
