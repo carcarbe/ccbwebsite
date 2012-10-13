@@ -12,6 +12,6 @@
 <%= yield %>
 
 
-<div id="legal"> <span>Copyright 2012, Carlos Carreño</span>  </div>
+
 </body>
 </html>

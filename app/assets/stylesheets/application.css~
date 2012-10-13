@@ -13,7 +13,7 @@
 */
 #wrapper {
 width: 900px;
-margin-right: 50px;
+ 
 margin-left:  50px;
 margin-top:   10px;
 
@@ -23,7 +23,7 @@ margin-top:   10px;
 
 background: url(../images/banner.jpg) ;
 border-radius: 20px;
-display: block;
+
 height: 404px;
 width: 800px;
 
@@ -35,9 +35,9 @@ width: 800px;
 
 #mainNav {
 	
-margin-top: -20;
 
-overflow: hidden;
+
+
 
 }
 
@@ -83,13 +83,20 @@ color: #333;
 }
 
 #legal {
-	clear: both;
 	
-	padding: 5px 5px 20px 160px;
+	 
+	 
 	border-top: 1px dashed #999999;
+	margin-top: 10px;
 	font-weight: bold;
-	color: #666666;
 	
+	
+}
+
+#legal span {
+
+padding: 5px 5px 20px 160px;
+color: #666666;
 }
 
 #webContent {
@@ -150,7 +157,7 @@ vertical-align:text-top;
 }
 
 a.mail {
-margin-top: 10px;
+
 	color: #6378df
 
 }
@@ -217,6 +224,18 @@ iframe {
 
 #Photography {
 background: url(../images/Camera.png) no-repeat ;
+padding-left: 55px;
+padding-top: 15px;
+}
+
+#Travel {
+background: url(../images/travel.png) no-repeat ;
+padding-left: 55px;
+padding-top: 15px;
+}
+
+#Read {
+background: url(../images/read.png) no-repeat ;
 padding-left: 55px;
 padding-top: 15px;
 }
