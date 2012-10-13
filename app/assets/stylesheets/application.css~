@@ -109,6 +109,7 @@ font-weight: 400;
 padding: 20px;
 border : 1px solid #999999;
 border-radius: 15px;
+overflow: hidden;
 
 }
 
@@ -130,6 +131,8 @@ border-radius: 15px;
 	letter-spacing: 1px;
 	word-spacing: 5px;
 	background: url(images/feature_bug.png) no-repeat top right;
+	
+	
 
 }
 #webContent h2{
@@ -137,10 +140,22 @@ color:#0241a8;
 }
 
 #about_me_info {
+overflow: hidden;
+width: 350px;
+height: 240px; 
+float: left;
+margin-left:40px;
+height: 100%;
 
-width: 560px;
+
+}
+#about_me_photo {
  
 
+overflow: hidden;
+float: right;
+width: 300px;
+padding: 10px;
 }
 
 #tableSkills th{
@@ -229,13 +244,13 @@ padding-top: 15px;
 }
 
 #Travel {
-background: url(../images/travel.png) no-repeat ;
+background: url(../images/Travel.png) no-repeat ;
 padding-left: 55px;
 padding-top: 15px;
 }
 
 #Read {
-background: url(../images/read.png) no-repeat ;
+background: url(../images/Read.png) no-repeat ;
 padding-left: 55px;
 padding-top: 15px;
 }

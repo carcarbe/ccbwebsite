@@ -28,7 +28,7 @@
 	 current_contents.each do |content|
 	 %>
 	
-	  
+	<div id="<%= content.name %>"
 	<%  if content.kind=='text' %>
 	 
 	<p><%= content.info.html_safe %> </p>
@@ -37,7 +37,7 @@
 	<% end%>
 		 
 		 
-		 
+	</div>	 
 		 
 	<%end%>
 	
@@ -46,5 +46,5 @@
  <%end %>
 <% end%>
 </div>
-<div id="legal"> <span>Copyright 2012, Carlos Carreño</span>  </div>
+
 </div>

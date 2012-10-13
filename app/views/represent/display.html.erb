@@ -28,16 +28,16 @@
 	 current_contents.each do |content|
 	 %>
 	
-	  
+	 
 	<%  if content.kind=='text' %>
 	 
 	<p><%= content.info.html_safe %> </p>
 	<% else %>
-	 	<%= image_tag(content.photo_path,:class=>'photo') %>
+	 	<%= image_tag(content.photo_path,:class=>'photo',:id=>content.name) %>
 	<% end%>
 		 
 		 
-		 
+	 	 
 		 
 	<%end%>
 	
