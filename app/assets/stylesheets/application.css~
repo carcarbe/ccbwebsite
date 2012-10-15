@@ -158,6 +158,7 @@ float: left;
 width: 300px;
 padding: 10px;
 margin-left: 100px;
+
 }
 
 #tableSkills th{
@@ -168,6 +169,7 @@ margin-left: 100px;
 #tableSkills td {
 
 padding-bottom: 23px;
+padding-left: 10px;
 
 
 vertical-align:text-top;
