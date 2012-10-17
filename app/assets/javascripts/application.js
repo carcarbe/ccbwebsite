@@ -40,7 +40,8 @@ $(document).ready(function() {
 
 	//return false;
 //});
-
+	$('#webContent').hide();
+    $('#webContent').slideDown(2000);
 	 
 	
 	check_info_type();
