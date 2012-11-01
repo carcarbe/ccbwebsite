@@ -11,6 +11,11 @@
  *= require_self
  *= require_tree .
 */
+#loading {
+width: 220px;
+height: 10px;
+background: url(../images/Loading_bar.gif) ;
+}
 #wrapper {
 width: 900px;
  
@@ -28,10 +33,7 @@ height: 404px;
 width: 800px;
 
 }
-#banner span {
 
-
-}
 
 #mainNav {
 	

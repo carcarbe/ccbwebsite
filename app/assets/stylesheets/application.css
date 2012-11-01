@@ -11,6 +11,12 @@
  *= require_self
  *= require_tree .
 */
+#loading {
+margin-left: 100px;
+width: 220px;
+height: 10px;
+background: url(../images/Loading_bar.gif) ;
+}
 #wrapper {
 width: 900px;
  

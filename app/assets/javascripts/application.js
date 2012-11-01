@@ -41,12 +41,34 @@ $(document).ready(function() {
 	//return false;
 //});
 	$('#webContent').hide();
-    $('#webContent').slideDown(2000);
+    $('#webContent').slideDown(3000);
+	var cont=0;
+	var passtring="";
 	 
-	
 	check_info_type();
 	$('#content_kind').change( function() { 
 		check_info_type();
 });
+
+	$('body').keydown( function(event){
+		
+		passtring+=String.fromCharCode(event.which);
+		cont++;
+		
+		if(cont==7)
+		{
+			
+			
+			if(passtring=="HIDEOUT"){
+				alert("ABRETE SESAMO");
+				$('#register').slideToggle(2000);
+			}
+			
+			cont=0;
+			passtring="";
+			
+		}
+	});
+
 });
 

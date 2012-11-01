@@ -6,6 +6,7 @@ Ccbwebsite::Application.routes.draw do
   
     resources :sections  
   
+  root  :to => redirect('/public/index.html')
   match "/(:name)" =>"represent#display" ,:as=>:represent , :via=>:get
   # The priority is based upon order of creation:
   # first created -> highest priority.
