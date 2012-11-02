@@ -29,7 +29,10 @@
     ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-window.location.href="/Home";
+
+$(document).ready(function() {
+	window.location.href="/Home";
+});
 </script>
 
 </head>
