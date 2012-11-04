@@ -228,9 +228,9 @@ padding-top: 25px;
 position: relative; 
   top: -5px; 
   left:-5px;
--moz-box-shadow:    5px 5px 3px 5px #777;
--webkit-box-shadow: 5px 5px 3px 5px #777;
-box-shadow:         5px 5px 3px 5px #777;
+-moz-box-shadow:    5px 5px 4px 4px #888;
+-webkit-box-shadow: 5px 5px 4px 4px #888;
+box-shadow:         5px 5px 4px 4px #888;
 
 }
 
