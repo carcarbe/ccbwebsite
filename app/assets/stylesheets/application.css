@@ -82,7 +82,21 @@ color: #333;
 #mainNav a:hover {  color:#FFFFFF; }
 #mainNav a:active { color:#333333;}
 
-#mainNav a:hover { background-color:#0241a8; }
+
+    @-webkit-keyframes bluePulse {
+    from { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #3875d7; -webkit-box-shadow: 0 0 18px #3875d7; }
+     to { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
+    }
+
+
+#mainNav a:hover { 
+-webkit-animation-name: bluePulse;
+-webkit-animation-duration: 3s;
+-webkit-animation-iteration-count: infinite;
+
+
+background-color:#0241a8; }
 
 #mainNav span {
 	font-family: verdana, arial, helvetica, sans-serif;
