@@ -85,7 +85,7 @@ color: #333;
 
     @-webkit-keyframes bluePulse {
     from { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
-    50% { background-color: #3875d7; -webkit-box-shadow: 0 0 25px #3875d7; }
+    50% { background-color: #3875d7; -webkit-box-shadow: 0 0 18px #3875d7; }
      to { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
     }
 
@@ -180,6 +180,10 @@ width: 300px;
 padding: 10px;
 margin-left: 100px;
 
+-moz-box-shadow:    5px 5px 3px 3px #777;
+-webkit-box-shadow: 5px 5px 3px 3px #777;
+box-shadow:         5px 5px 3px 3px #777;
+
 }
 
 #tableSkills th{
@@ -223,6 +227,9 @@ padding-top: 25px;
 position: relative; 
   top: -5px; 
   left:-5px;
+-moz-box-shadow:    5px 5px 3px 3px #777;
+-webkit-box-shadow: 5px 5px 3px 3px #777;
+box-shadow:         5px 5px 3px 3px #777;
 
 }
 
