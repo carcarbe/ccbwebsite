@@ -107,9 +107,13 @@ color: #333;
 
 #mainNav a:hover { 
 animation: bluePulse 3s;
+animation-iteration-count: infinite;
 -moz-animation: bluePulse 3s; /* Firefox */
+-moz-animation-iteration-count: infinite;
 -webkit-animation: bluePulse 3s; /* Safari and Chrome */
+-webkit-animation-iteration-count: infinite;
 -o-animation: bluePulse 3s; /* Opera */
+-o-animation-iteration-count: infinite;
 
 
 background-color:#0241a8; }

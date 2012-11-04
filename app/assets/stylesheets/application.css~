@@ -106,9 +106,10 @@ color: #333;
 
 
 #mainNav a:hover { 
--webkit-animation-name: bluePulse;
--webkit-animation-duration: 3s;
--webkit-animation-iteration-count: infinite;
+animation: bluePulse 3s;
+-moz-animation: bluePulse 3s; /* Firefox */
+-webkit-animation: bluePulse 3s; /* Safari and Chrome */
+-o-animation: bluePulse 3s; /* Opera */
 
 
 background-color:#0241a8; }
