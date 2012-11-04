@@ -82,8 +82,23 @@ color: #333;
 #mainNav a:hover {  color:#FFFFFF; }
 #mainNav a:active { color:#333333;}
 
+@keyframes bluePulse {
+    from { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #3875d7; -webkit-box-shadow: 0 0 18px #3875d7; }
+     to { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
+    }
+@-moz-keyframes bluePulse { /* Mozilla */
+    from { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #3875d7; -webkit-box-shadow: 0 0 18px #3875d7; }
+     to { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
+    }
 
-    @-webkit-keyframes bluePulse {
+@-webkit-keyframes bluePulse { /* Safari and Chrome */
+    from { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #3875d7; -webkit-box-shadow: 0 0 18px #3875d7; }
+     to { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
+    }
+@-o-keyframes bluePulse {  /* Opera */
     from { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
     50% { background-color: #3875d7; -webkit-box-shadow: 0 0 18px #3875d7; }
      to { background-color: #0241a8; -webkit-box-shadow: 0 0 9px #333; }
