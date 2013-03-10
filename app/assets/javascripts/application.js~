@@ -32,18 +32,14 @@ function check_info_type()
 }
 
 $(document).ready(function() {
+	//$('#mainNav a').click(function() {
+	// var url=$(this).attr('href');
+	// $('webContent').empty();
+	//$('#webContent').load(url+ ' #webContent');
 	
 
-
-
-$('#mainNav a').click(function() {
-	 var url=$(this).attr('href')+' #webContent';
-	 $('webContent').empty();
-	$('#webContent').load(url+ ' #webContent');
-	
-
-	return false;
-});
+	//return false;
+//});
 	$('#webContent').hide();
     $('#webContent').slideDown(3000);
 	var cont=0;
